@@ -12,6 +12,7 @@ importers:
       '@angular/core': ~13.1.1
       '@angular/forms': 13.1.2
       '@angular/material': 13.1.2
+      '@angular/material-moment-adapter': 13.1.2
       '@angular/platform-browser': ~13.1.1
       '@angular/platform-browser-dynamic': ~13.1.1
       '@teambit/angular-v13': 0.0.8
@@ -19,6 +20,7 @@ importers:
       '@types/node': ^12.11.1
       jest: ^27.4.4
       jest-preset-angular: ~11.0.1
+      moment: 2.29.1
       rxjs: ~7.4.0
       tslib: ^2.3.0
       typescript: ~4.5.2
@@ -30,8 +32,10 @@ importers:
       '@angular/core': registry.npmjs.org/@angular/core/13.1.2_rxjs@7.4.0+zone.js@0.11.4
       '@angular/forms': registry.npmjs.org/@angular/forms/13.1.2_59483d19dee782e5c394d1bd9501a4b6
       '@angular/material': registry.npmjs.org/@angular/material/13.1.2_3253ab242b1eaf51f63e899a586bff64
+      '@angular/material-moment-adapter': registry.npmjs.org/@angular/material-moment-adapter/13.1.2_233297f3fe34556811a9ce470f2495a5
       '@angular/platform-browser': registry.npmjs.org/@angular/platform-browser/13.1.2_500a9672c0d9e2e28977f34ef1b17880
       '@angular/platform-browser-dynamic': registry.npmjs.org/@angular/platform-browser-dynamic/13.1.2_18e6017ca0e4619df13975d8c4e522bf
+      moment: registry.npmjs.org/moment/2.29.1
       rxjs: registry.npmjs.org/rxjs/7.4.0
       tslib: registry.npmjs.org/tslib/2.3.1
       typescript: registry.npmjs.org/typescript/4.5.4
@@ -475,6 +479,22 @@ packages:
       '@angular/platform-browser': registry.npmjs.org/@angular/platform-browser/13.1.2_500a9672c0d9e2e28977f34ef1b17880
       rxjs: registry.npmjs.org/rxjs/7.4.0
       tslib: registry.npmjs.org/tslib/2.3.1
+
+  registry.npmjs.org/@angular/material-moment-adapter/13.1.2_233297f3fe34556811a9ce470f2495a5:
+    resolution: {integrity: sha512-mOvUnthT55wrRH33iuf8kg3JlJrZBpAHFrHkEMxiFs4jyYnK1TyvH6yKjs/m19lokGIh4B3gN6oK0OG73TmanQ==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@angular/material-moment-adapter/-/material-moment-adapter-13.1.2.tgz}
+    id: registry.npmjs.org/@angular/material-moment-adapter/13.1.2
+    name: '@angular/material-moment-adapter'
+    version: 13.1.2
+    peerDependencies:
+      '@angular/core': ^13.0.0 || ^14.0.0-0
+      '@angular/material': 13.1.2
+      moment: ^2.18.1
+    dependencies:
+      '@angular/core': registry.npmjs.org/@angular/core/13.1.2_rxjs@7.4.0+zone.js@0.11.4
+      '@angular/material': registry.npmjs.org/@angular/material/13.1.2_3253ab242b1eaf51f63e899a586bff64
+      moment: registry.npmjs.org/moment/2.29.1
+      tslib: registry.npmjs.org/tslib/2.3.1
+    dev: false
 
   registry.npmjs.org/@angular/material/13.1.2_3253ab242b1eaf51f63e899a586bff64:
     resolution: {integrity: sha512-M7eDgTMCZ/naoiS6Z5nj3N/sNUFc+CGPHX4yb563RuknqN7huDCvdyxA6KnhYLZsVlNCPh5ZrEr6H8ZiYJWcpg==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@angular/material/-/material-13.1.2.tgz}
@@ -12679,7 +12699,6 @@ packages:
     resolution: {integrity: sha512-kHmoybcPV8Sqy59DwNDY3Jefr64lK/by/da0ViFcuA4DH0vQg5Q6Ze5VimxkfQNSC+Mls/Kx53s7TjP1RhFEDQ==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/moment/-/moment-2.29.1.tgz}
     name: moment
     version: 2.29.1
-    dev: true
 
   registry.npmjs.org/move-concurrently/1.0.1:
     resolution: {integrity: sha1-viwAX9oy4LKa8fBdfEszIUxwH5I=, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/move-concurrently/-/move-concurrently-1.0.1.tgz}
